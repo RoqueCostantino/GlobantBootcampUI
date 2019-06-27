@@ -1,0 +1,75 @@
+header {
+    height: 15%;
+    text-align: center;
+    font-size: 16px;
+}
+
+header.title {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background-color: #333;
+    height: 100vh;
+}
+
+body > *:not(.box), .box > * {
+    background-color:#666;
+    text-align: center;
+}
+
+body * {
+    border-radius: 10px;
+    margin: 5px;
+    color: white;
+}
+
+section, nav, aside {
+    width: calc(25% - 10px);
+    height: 99%;
+    flex-direction: column;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.box{
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+}
+
+section {
+    width: calc(50% - 10px);
+    
+     
+}
+.caja{
+   height: calc(100% - 50px);
+}
+.caja > * {
+    background-color: #999;
+}
+
+.caja article{
+    height: 75%;
+}
+
+.caja > header, .caja > footer {
+    height: 10%;
+}
+
+footer{
+    height: 10%;
+    align-content: center;
+    vertical-align: middle;
+}
+
+footer.footer{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
